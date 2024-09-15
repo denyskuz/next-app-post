@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Blog Application
+
+This is a **Next.js** project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and styled using **Tailwind CSS**. This application displays a list of blog posts fetched from an API and allows users to view individual posts and their comments. Additionally, the application supports light and dark themes.
+
+## Features
+
+- **Static Site Generation (SSG)** for improved performance.
+- **Dynamic Routing** for individual post pages.
+- Fetch data from an external API.
+- Supports **Light/Dark** theme toggle.
+- Built using **Next.js App Router**.
+- Responsive and modern design powered by **Tailwind CSS**.
 
 ## Getting Started
 
-First, run the development server:
+Follow these instructions to get the project up and running locally.
 
+### Prerequisites
+
+Ensure you have the following tools installed:
+
+- [Node.js](https://nodejs.org/) (v16.x or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+Clone the repository and navigate to the project directory:
+
+```bash
+git clone git@github.com:denyskuz/next-app-post.git
+cd next-app-post
+
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+### Development Mode
+
+To start the development server, run:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
+Open http://localhost:3000 in your browser to view the app. The development server supports hot-reloading, so any changes you make to the code will automatically refresh the page.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Production Mode
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To start the development server, run:
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
+This will create an optimized production build of the application.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Start the production server:
+```bash
+npm run start
+# or
+yarn start
+# or
+pnpm start
+```
+The app will be served at http://localhost:3000.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
